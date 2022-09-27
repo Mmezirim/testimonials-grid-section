@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
 *{
     box-sizing: content-box;
     margin: 0;
@@ -6,6 +7,7 @@
 }
 body{
     background-color: hsl(210, 46%, 95%);
+    font-family: "Barlow Semi Condensed", sans-serif;
 }
 .container{
     display: grid;
@@ -14,8 +16,7 @@ body{
     grid-row-end: 2;
     position: relative;
     width: 70%;
-    min-width: 69%;
-    transform: translateY(15%);
+    transform: translateY(20%);
     gap: 1em; 
 }
 img{
@@ -25,13 +26,14 @@ img{
 #grid{
     padding: 2em;
     line-height: 1.4em;
+    font-size: 13px;
 }
 .verification{
     opacity: 50%;
     font-size: smaller;
 }
 h3{
-    padding: 1em 0;
+    padding: 0.3em 0;
     font-weight: bolder;
 }
 h4{
@@ -82,6 +84,11 @@ footer{
 a{
     color: black;
     text-decoration: none;
+}
+@media (max-width:1416px) {
+    .container{
+        width: 85%;
+    }
 }
 @media (max-width:836px) {
     .container{
