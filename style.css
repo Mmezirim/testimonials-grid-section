@@ -12,8 +12,9 @@ body{
     margin: auto;
     grid-template-columns: repeat(4, 1fr);
     grid-row-end: 2;
+    position: relative;
     width: 70%;
-    max-height: 60%;
+    min-width: 69%;
     transform: translateY(15%);
     gap: 1em; 
 }
@@ -73,6 +74,14 @@ p{
     border-radius: 0.5em;
     color: hsl(0, 0%, 100%);
     grid-column: span 2;
+}
+footer{
+    display: flex;
+    transform: translateX(180%);
+}
+a{
+    color: black;
+    text-decoration: none;
 }
 @media (max-width:836px) {
     .container{
